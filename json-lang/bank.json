@@ -1,0 +1,23 @@
+{
+  "en": {
+    "bank-wishlist": "Wishlist",
+    "bank-payment-title": "Payment to Jundoku",
+    "bank-subtitle": "Please send your payment details so Jundoku can verify them.",
+    "bank-detail-title": "Payment detail:",
+    "bank-detail-note": "Please send a picture of the bank transfer details.",
+    "bank-import-image": "Import Image",
+    "bank-continue": "Continue",
+    "upload-error": "Please select an image before continuing"
+  },
+  
+  "vi": {
+    "bank-wishlist": "Danh sách yêu thích",
+    "bank-payment-title": "Thanh toán cho Jundoku",
+    "bank-subtitle": "Vui lòng gửi thông tin thanh toán để Jundoku có thể xác minh.",
+    "bank-detail-title": "Chi tiết thanh toán:",
+    "bank-detail-note": "Vui lòng gửi hình ảnh chi tiết chuyển khoản ngân hàng.",
+    "bank-import-image": "Tải ảnh lên",
+    "bank-continue": "Tiếp tục",
+    "upload-error": "Vui lòng chọn hình ảnh trước khi tiếp tục"
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Book Category - Jundoku Books</title>
+    <meta
+      name="description"
+      content="Browse books by category with dynamic filtering and a responsive grid layout"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/category.css" />
+  </head>
+
+  <body data-page="category">
+    <div data-include="../partials/header.html"></div>
+
+    <div class="category-layout">
+      <aside class="filter-bar" aria-label="Book filters and categories">
+        <nav class="sidebar-categories" aria-label="Book categories">
+          <h2 class="sidebar-title" data-i18n="sidebar-categories-title">Categories</h2>
+          <ul id="category-nav-list"></ul>
+        </nav>
+
+        <section class="filter-group">
+          <h3 class="filter-title" data-i18n="filter-author">Author</h3>
+          <input id="filter-author" class="filter-input" type="text" placeholder="Search author" data-i18n="filter-author-placeholder" />
+        </section>
+
+        <section class="filter-group">
+          <h3 class="filter-title" data-i18n="filter-cover-type">Cover Type</h3>
+          <select id="filter-cover-type" class="filter-select">
+            <option value="" data-i18n="filter-any">Any</option>
+            <option value="Bìa Mềm" data-i18n="cover-soft">Softcover</option>
+            <option value="Bìa Cứng" data-i18n="cover-hard">Hardcover</option>
+            <option value="Bìa Gập" data-i18n="cover-folded">Folded cover</option>
+            <option value="Bộ Hộp" data-i18n="cover-box">Box set</option>
+            <option value="Bìa Da" data-i18n="cover-leather">Leather</option>
+          </select>
+        </section>
+
+        <section class="filter-group">
+          <h3 class="filter-title" data-i18n="filter-price">Price</h3>
+          <select id="filter-price-range" class="filter-select">
+            <option value="" data-i18n="filter-any">Any</option>
+            <option value="under-120">Under 120.000 đ</option>
+            <option value="120-220">120.000 đ - 220.000 đ</option>
+            <option value="over-220">Over 220.000 đ</option>
+          </select>
+        </section>
+
+        <section class="filter-group">
+          <h3 class="filter-title" data-i18n="filter-rating">Minimum Rating</h3>
+          <select id="filter-min-rating" class="filter-select">
+            <option value="" data-i18n="filter-any">Any</option>
+            <option value="3">3+ Stars</option>
+            <option value="4">4+ Stars</option>
+            <option value="4.5">4.5+ Stars</option>
+          </select>
+        </section>
+
+        <section class="filter-actions">
+          <button type="button" id="apply-category-filters" class="filter-button primary" data-i18n="filter-apply">Apply filters</button>
+          <button type="button" id="reset-category-filters" class="filter-button secondary" data-i18n="filter-reset">Reset</button>
+        </section>
+      </aside>
+
+      <main class="category-page" data-scroll="fade-up">
+        <section class="category-heading" aria-label="Category heading">
+          <nav id="category-breadcrumb" class="category-breadcrumb" aria-label="Breadcrumb"></nav>
+          <h1 id="category-title" data-i18n="book-cat-fiction">Fiction</h1>
+          <p id="category-count">0 products</p>
+        </section>
+
+        <section id="products-grid" class="book-grid" aria-live="polite"></section>
+        <nav id="pagination-bar" class="pagination-bar" aria-label="Pagination"></nav>
+      </main>
+    </div>
+
+    <img
+      id="btn-top"
+      src="../images/return_to_top.png"
+      alt="Return to top"
+    />
+
+    <div data-include="../partials/footer.html"></div>
+
+    <script src="../js/lang-change.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/partials.js"></script>
+    <script src="../js/category-data.js"></script>
+    <script src="../js/category.js"></script>
+  </body>
+</html>

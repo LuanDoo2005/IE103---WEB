@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="site-title">JUNDOKU Bookstore</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body data-page="home">
+    <div data-include="partials/header.html"></div>
+
+    <main>
+        <section class="slide slide-hero">
+            <div class="hero-bg" style="background-image: url('images/homepage/hero-page.jpg');" aria-hidden="true"></div>
+            <div class="slide-content">
+                <div class="hero-text-block">
+                    <h1 class="hero-title">JUNDOKU</h1>
+                    <p class="hero-subtitle" data-i18n="hero-slogan">Sách là nguồn tri thức vô tận</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" type="button" data-i18n="shop-now">Mua sắm ngay</button>
+                        <button class="btn btn-secondary" type="button" data-i18n="discover">Khám phá</button>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <span data-i18n="scroll-down">Kéo xuống</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide slide-products" id="featured-books-section">
+            <div class="slide-content">
+                <h2 class="slide-title" data-i18n="featured-books">SÁCH NỔI BẬT</h2>
+
+                <div class="product-filter" id="home-category-filters" aria-label="Danh mục sách nổi bật"></div>
+                <p class="section-status" id="home-books-status" aria-live="polite">Đang tải sách nổi bật...</p>
+
+                <div class="book-slider" id="featured-books-slider" aria-live="polite"></div>
+
+                <div class="view-all-btn">
+                    <button class="btn btn-outline" id="view-all-books-btn" type="button" data-i18n="view-all">Xem tất cả</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide slide-flash-sale" id="flash-sale-section">
+            <div class="flash-sale-bg" style="background-image: url('images/homepage/flash-sale.jpg');" aria-hidden="true"></div>
+            <div class="slide-content">
+                <h2 class="sale-title" data-i18n="flash-sale-now">⚡ SỰ KIỆN GIỜ VÀNG</h2>
+                <p class="sale-subtitle">Giảm giá sốc 20% - 50% chỉ trong 2 giờ tới!</p>
+
+                <div class="countdown-container">
+                    <div class="time-block">
+                        <span class="time-number" id="hours">02</span>
+                        <span class="time-label" data-i18n="hours">Giờ</span>
+                    </div>
+                    <span class="time-separator">:</span>
+                    <div class="time-block">
+                        <span class="time-number" id="minutes">00</span>
+                        <span class="time-label" data-i18n="minutes">Phút</span>
+                    </div>
+                    <span class="time-separator">:</span>
+                    <div class="time-block">
+                        <span class="time-number" id="seconds">00</span>
+                        <span class="time-label" data-i18n="seconds">Giây</span>
+                    </div>
+                </div>
+
+                <button class="btn btn-cta" type="button" data-i18n="grab-now">SĂN DEAL NGAY</button>
+            </div>
+        </section>
+
+        <section class="slide slide-membership">
+            <div class="slide-content">
+                <h2 class="slide-title" data-i18n="member-title">ĐẶC QUYỀN THÀNH VIÊN</h2>
+
+                <div class="membership-grid">
+                    <div class="membership-card tier-silver">
+                        <div class="tier-icon">🥈</div>
+                        <h3 class="tier-name">SILVER</h3>
+                        <p class="tier-benefit" data-i18n="silver-benefit">Giảm 5% mỗi đơn hàng</p>
+                        <ul class="tier-features">
+                            <li>Điểm tích lũy 1%</li>
+                            <li>Hỗ trợ ưu tiên</li>
+                            <li>Thư mục yêu thích</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-card tier-gold">
+                        <div class="tier-icon">🥇</div>
+                        <h3 class="tier-name">GOLD</h3>
+                        <p class="tier-benefit" data-i18n="gold-benefit">Giảm 10% + Miễn phí vận chuyển</p>
+                        <ul class="tier-features">
+                            <li>Điểm tích lũy 3%</li>
+                            <li>Quà tặng hàng tháng</li>
+                            <li>Truy cập sớm</li>
+                        </ul>
+                    </div>
+
+                    <div class="membership-card tier-diamond">
+                        <div class="tier-icon">💎</div>
+                        <h3 class="tier-name">DIAMOND</h3>
+                        <p class="tier-benefit" data-i18n="diamond-benefit">Giảm 15% + Quà tặng độc quyền</p>
+                        <ul class="tier-features">
+                            <li>Điểm tích lũy 5%</li>
+                            <li>VIP event access</li>
+                            <li>Tư vấn độc quyền</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="membership-cta">
+                    <button class="btn btn-primary" type="button" data-i18n="join-now">Tham gia ngay</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+
+    <script src="js/partials.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/lang-change.js"></script>
+    <script src="js/category-data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

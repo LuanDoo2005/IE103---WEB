@@ -1,0 +1,106 @@
+﻿//Nhóm 9: Phần thay đổi ngôn ngữ
+let currentLang = 'en';
+let translations = {};
+
+async function loadTranslation(page, lang) {
+    try {
+        // Dùng đường dẫn tương đối để chạy ổn cả local và deploy
+        const basePath = document.body?.dataset?.page === 'home' ? './' : '../';
+
+        const [commonRes, pageRes] = await Promise.all([
+            fetch(`${basePath}json-lang/common.json`),
+            fetch(`${basePath}json-lang/${page}.json`)
+        ]);
+
+        if (!commonRes.ok || !pageRes.ok) {
+            console.warn(`Translation file not found for page: ${page}`);
+            // Thử load chỉ common.json nếu page.json không tồn tại
+            if (commonRes.ok) {
+                const commonData = await commonRes.json();
+                translations = commonData[lang] || {};
+                applyTranslations();
+                currentLang = lang;
+                localStorage.setItem('selectedLanguage', lang);
+                return;
+            }
+            throw new Error("File not found");
+        }
+
+        const [commonData, pageData] = await Promise.all([
+            commonRes.json(),
+            pageRes.json()
+        ]);
+
+        // Gộp: trang hiện tại ghi đè lên common nếu trùng key
+        translations = {
+            ...commonData[lang],
+            ...pageData[lang]
+        };
+
+        applyTranslations();
+        currentLang = lang;
+        
+        // Lưu ngôn ngữ đã chọn vào localStorage: để khi chuyển sang trang khác vẫn giữ ngôn ngữ mong muốn
+        localStorage.setItem('selectedLanguage', lang);
+
+    } catch (err) {
+        console.error("Lỗi tải ngôn ngữ:", err);}
+}
+
+function applyTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        
+        if (translations[key] !== undefined) {
+            // Input placeholder
+            if (el.hasAttribute('placeholder')) {
+                el.setAttribute('placeholder', translations[key]);
+            } 
+            // Kiểm tra nếu có data-i18n-html="true"
+            else if (el.getAttribute('data-i18n-html') === 'true') {
+                el.innerHTML = translations[key];  // ← Giữ HTML
+            }
+            // Text thuần
+            else {
+                el.textContent = translations[key];
+            }
+        }
+    });
+}
+
+
+//Nhóm 9: Hàm thay đổi ngôn ngữ khi người dùng chọn radio button
+function changeLanguage(lang) {
+    const page = document.body.dataset.page || 'home';
+    loadTranslation(page, lang);
+}
+
+//Nhóm 9: Khởi động khi trang tải xong
+document.addEventListener('DOMContentLoaded', () => {
+    const page = document.body.dataset.page || 'home';
+
+    // Lấy ngôn ngữ đã lưu từ localStorage, mặc định là 'en'
+    const savedLang = localStorage.getItem('selectedLanguage') || 'en';
+    
+    // Function để cập nhật radio button và load translation
+    function initLanguage() {
+        // Cập nhật trạng thái radio button theo ngôn ngữ đã lưu
+        const langRadio = document.getElementById(`lang-${savedLang}`);
+        if (langRadio) {
+            langRadio.checked = true;
+        }
+        
+        // Tải ngôn ngữ đã lưu
+        loadTranslation(page, savedLang);
+    }
+    
+    // Chạy sau khi header load xong (vì radio button nằm trong header)
+    if (document.getElementById('lang-en')) {
+        // Header đã load rồi
+        initLanguage();
+    } else {
+        // Đợi header load xong
+        document.addEventListener('allPartialsLoaded', initLanguage);
+    }
+});
+

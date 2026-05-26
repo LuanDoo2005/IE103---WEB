@@ -1,0 +1,36 @@
+{
+  "en": {
+    "register-title": "Create Your Account",
+    "register-subtitle": "Join Jundoku and tell us what you like to read",
+    "register-fullname-label": "Full Name",
+    "register-fullname-placeholder": "Your full name",
+    "register-email-label": "Email",
+    "register-email-placeholder": "Your email address",
+    "register-password-label": "Password",
+    "register-password-placeholder": "Create a password",
+    "register-confirm-label": "Confirm Password",
+    "register-confirm-placeholder": "Re-enter your password",
+    "register-pref-label": "Reading Preferences",
+    "register-pref-help": "Choose one or more genres you enjoy.",
+    "register-btn": "Register",
+    "register-login-link": "Already have an account? Log in",
+    "register-prompt-link": "Register now"
+  },
+  "vi": {
+    "register-title": "Tạo Tài Khoản Của Bạn",
+    "register-subtitle": "Gia nhập Jundoku và cho chúng tôi biết bạn thích đọc gì",
+    "register-fullname-label": "Họ và tên",
+    "register-fullname-placeholder": "Nhập họ và tên",
+    "register-email-label": "Email",
+    "register-email-placeholder": "Nhập địa chỉ email",
+    "register-password-label": "Mật khẩu",
+    "register-password-placeholder": "Tạo mật khẩu",
+    "register-confirm-label": "Xác nhận mật khẩu",
+    "register-confirm-placeholder": "Nhập lại mật khẩu",
+    "register-pref-label": "Sở thích đọc sách",
+    "register-pref-help": "Chọn một hoặc nhiều thể loại bạn yêu thích.",
+    "register-btn": "Đăng ký",
+    "register-login-link": "Đã có tài khoản? Đăng nhập",
+    "register-prompt-link": "Đăng ký ngay"
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Email</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body data-page="verify-email">
+    <!--Nhóm 9: Phần Header-->
+    <div data-include="../partials/header.html"></div>
+
+    <!--Nhóm 9: Phần chính của trang xác nhận email-->
+    <main>
+        <div class="login-container">
+            <div id="verify-step" class="step">
+                <h2 data-i18n="verify-title">Verify Your Email</h2>
+                <p>
+                    <span data-i18n="verify-subtitle-1">A 6-digit code has been sent to</span>
+                    <span id="display-email"></span>. 
+                    <span data-i18n="verify-subtitle-2">Please enter it below.</span>
+                </p>
+                <p id="otp-debug-code" class="otp-debug hidden"></p>
+                <input type="text" id="otp" data-i18n="otp-placeholder" placeholder="Enter 6-Digit Code" maxlength="6" required>
+                <button type="button" onclick="verifyCode()" data-i18n="login-btn">Verify</button>
+                <a href="#" onclick="goBackToRegister(); return false;" data-i18n="back-link">Go back to register.</a>
+            </div>
+            
+            <p id="error-message" class="error hidden"></p>
+        </div>
+    </main>
+
+    <!--Nhóm 9: Phần quay lại đầu trang-->
+    <img id="btn-top" src="../images/return_to_top.png" alt="Return to top">
+
+    <!--Nhóm 9: Phần footer-->
+    <footer>
+        <div class="footer-logo">
+            <div><em>Jundoku</em></div>
+            <div>皆様の本</div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="nav-about">About Us</h3> 
+                <ul>
+                    <li data-i18n="footer-aboutus">Mang đến trải nghiệm đọc và mua sách tinh tế, chất lượng cho mọi độc giả</li>
+                    <li data-i18n="footer-aboutus-add">📍 123 Harmony Street, District 1, Ho Chi Minh City</li>
+                    <li>📞 (+84) 123 456 789</li>
+                    <li>📧 support@jundoku.com</li>
+                    <li>🕒 8:00 AM – 9:00 PM (Mon – Sun)</li>
+                </ul>
+            </div>
+        <div class="footer-section">
+            <h3 data-i18n="footer-categories">Shop by Category</h3>
+            <ul>
+                <li><a href="../typologies/category.html?cat=business" data-i18n="footer-categories-sofa">Sofas & Armchairs</a></li>
+                <li><a href="../404.html" data-i18n="footer-categories-dining">Dining Tables</a></li>
+                <li><a href="../typologies/category.html?cat=fiction" data-i18n="footer-categories-bed">Beds</a></li>
+                <li><a href="../404.html" data-i18n="footer-categories-cabinet">Cabinets & Shelves</a></li>
+                <li><a href="../404.html" data-i18n="footer-categories-decor">Lighting & Decor</a></li>
+                <li><a data-i18n="footer-categories-new">New Arrivals / Promotions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3 data-i18n="footer-policies">Policies & Support</h3>
+            <ul>
+                <li><a href="../policies/policies.html" data-i18n="footer-policies-warranty">Warranty Policy</a></li>
+                <li><a href="../policies/policies.html" data-i18n="footer-policies-return">Return & Exchange</a></li>
+                <li><a href="../policies/policies.html" data-i18n="footer-policies-shipping">Shipping Policy</a></li>
+                <li><a href="../policies/policies.html" data-i18n="footer-policies-order">How to Order</a></li>
+                <li><a href="../policies/policies.html" data-i18n="footer-policies-privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        </div>
+            <div class="footer-bottom">
+                <span>© 2025 JUNDOKU – All rights reserved.</span>
+                <div class="social-icons">
+                    <div class="social-icon">f</div>
+                    <div class="social-icon">in</div>
+                    <div class="social-icon">t</div>
+                </div>
+            </div>
+    </footer>
+    
+    <script src="../js/lang-change.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/verify-email.js"></script>
+    <script src="../js/partials.js"></script>
+</body>
+</html>

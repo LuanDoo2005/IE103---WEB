@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+</head>
+<body data-page="register">
+    <div data-include="../partials/header.html"></div>
+
+    <main>
+        <div class="register-container">
+            <div class="register-hero">
+                <h2 data-i18n="register-title">Create Your Account</h2>
+                <p data-i18n="register-subtitle">Join Jundoku and tell us what you like to read</p>
+            </div>
+
+            <form id="register-form" class="register-form">
+                <div class="form-group">
+                    <label for="full-name" data-i18n="register-fullname-label">Full Name</label>
+                    <input type="text" id="full-name" data-i18n="register-fullname-placeholder" placeholder="Your full name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="email" data-i18n="register-email-label">Email</label>
+                    <input type="email" id="email" data-i18n="register-email-placeholder" placeholder="Your email address" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="password" data-i18n="register-password-label">Password</label>
+                    <input type="password" id="password" data-i18n="register-password-placeholder" placeholder="Create a password" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password" data-i18n="register-confirm-label">Confirm Password</label>
+                    <input type="password" id="confirm-password" data-i18n="register-confirm-placeholder" placeholder="Re-enter your password" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="phone" data-i18n="label-phone">Phone Number</label>
+                    <input type="text" id="phone" data-i18n="placeholder-phone" placeholder="Enter phone number" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="dob" data-i18n="label-dob">Date of Birth</label>
+                    <input type="text" id="dob" placeholder="dd/mm/yyyy" maxlength="10" inputmode="numeric" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="gender" data-i18n="label-gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="" disabled selected data-i18n="select-gender">Select Gender</option>
+                        <option value="Male" data-i18n="gender-male">Male</option>
+                        <option value="Female" data-i18n="gender-female">Female</option>
+                        <option value="Other" data-i18n="gender-other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="city-province" data-i18n="label-city">City/Province</label>
+                    <select id="city-province" required>
+                        <option value="" disabled selected data-i18n="placeholder-city">Select your city/province</option>
+                        <option value="An Giang">An Giang</option>
+                        <option value="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                        <option value="Bạc Liêu">Bạc Liêu</option>
+                        <option value="Bắc Giang">Bắc Giang</option>
+                        <option value="Bắc Kạn">Bắc Kạn</option>
+                        <option value="Bắc Ninh">Bắc Ninh</option>
+                        <option value="Bến Tre">Bến Tre</option>
+                        <option value="Bình Dương">Bình Dương</option>
+                        <option value="Bình Định">Bình Định</option>
+                        <option value="Bình Phước">Bình Phước</option>
+                        <option value="Bình Thuận">Bình Thuận</option>
+                        <option value="Cà Mau">Cà Mau</option>
+                        <option value="Cao Bằng">Cao Bằng</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Đắk Lắk">Đắk Lắk</option>
+                        <option value="Đắk Nông">Đắk Nông</option>
+                        <option value="Điện Biên">Điện Biên</option>
+                        <option value="Đồng Nai">Đồng Nai</option>
+                        <option value="Đồng Tháp">Đồng Tháp</option>
+                        <option value="Gia Lai">Gia Lai</option>
+                        <option value="Hà Giang">Hà Giang</option>
+                        <option value="Hà Nam">Hà Nam</option>
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="Hà Tây">Hà Tây</option>
+                        <option value="Hà Tĩnh">Hà Tĩnh</option>
+                        <option value="Hải Dương">Hải Dương</option>
+                        <option value="Hải Phòng">Hải Phòng</option>
+                        <option value="Hậu Giang">Hậu Giang</option>
+                        <option value="Hòa Bình">Hòa Bình</option>
+                        <option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+                        <option value="Hưng Yên">Hưng Yên</option>
+                        <option value="Khánh Hòa">Khánh Hòa</option>
+                        <option value="Kiên Giang">Kiên Giang</option>
+                        <option value="Kon Tum">Kon Tum</option>
+                        <option value="Lai Châu">Lai Châu</option>
+                        <option value="Lạng Sơn">Lạng Sơn</option>
+                        <option value="Lào Cai">Lào Cai</option>
+                        <option value="Lâm Đồng">Lâm Đồng</option>
+                        <option value="Long An">Long An</option>
+                        <option value="Nam Định">Nam Định</option>
+                        <option value="Nghệ An">Nghệ An</option>
+                        <option value="Ninh Bình">Ninh Bình</option>
+                        <option value="Ninh Thuận">Ninh Thuận</option>
+                        <option value="Phú Thọ">Phú Thọ</option>
+                        <option value="Phú Yên">Phú Yên</option>
+                        <option value="Quảng Bình">Quảng Bình</option>
+                        <option value="Quảng Nam">Quảng Nam</option>
+                        <option value="Quảng Ngãi">Quảng Ngãi</option>
+                        <option value="Quảng Ninh">Quảng Ninh</option>
+                        <option value="Quảng Trị">Quảng Trị</option>
+                        <option value="Sóc Trăng">Sóc Trăng</option>
+                        <option value="Sơn La">Sơn La</option>
+                        <option value="Tây Ninh">Tây Ninh</option>
+                        <option value="Thái Bình">Thái Bình</option>
+                        <option value="Thái Nguyên">Thái Nguyên</option>
+                        <option value="Thanh Hóa">Thanh Hóa</option>
+                        <option value="Thừa Thiên Huế">Thừa Thiên Huế</option>
+                        <option value="Tiền Giang">Tiền Giang</option>
+                        <option value="Trà Vinh">Trà Vinh</option>
+                        <option value="Tuyên Quang">Tuyên Quang</option>
+                        <option value="Vĩnh Long">Vĩnh Long</option>
+                        <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                        <option value="Yên Bái">Yên Bái</option>
+                    </select>
+                </div>
+
+                <div class="form-group field-full">
+                    <label for="address-detail" data-i18n="label-address-detail">Detailed Address</label>
+                    <input type="text" id="address-detail" data-i18n="placeholder-address-detail" placeholder="E.g: 123 Main Street, Ben Thanh Ward" />
+                </div>
+
+                <div class="form-group field-full">
+                    <label data-i18n="register-pref-label">Sở thích đọc sách</label>
+                    <p class="helper-text" data-i18n="register-pref-help">Chọn một hoặc nhiều thể loại bạn thích.</p>
+                    <div class="preference-grid">
+                        <label class="preference-item"><input type="checkbox" name="reading-preference" value="Văn học" /> Văn học</label>
+                        <label class="preference-item"><input type="checkbox" name="reading-preference" value="Manga" /> Manga</label>
+                        <label class="preference-item"><input type="checkbox" name="reading-preference" value="Kinh tế" /> Kinh tế</label>
+                        <label class="preference-item"><input type="checkbox" name="reading-preference" value="Kỹ năng" /> Kỹ năng</label>
+                        <label class="preference-item"><input type="checkbox" name="reading-preference" value="Thiếu nhi" /> Thiếu nhi</label>
+                        <label class="preference-item"><input type="checkbox" name="reading-preference" value="Tản văn" /> Tản văn</label>
+                    </div>
+                </div>
+
+                <p id="register-message" class="error hidden field-full"></p>
+
+                <div class="field-full action-row">
+                    <button type="submit" data-i18n="register-btn">Đăng ký</button>
+                    <a class="login-back-link" href="login.html" data-i18n="register-login-link">Đã có tài khoản? Đăng nhập</a>
+                </div>
+            </form>
+
+            <div id="loading-overlay" class="loading-overlay hidden">
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                    <p data-i18n="register-loading">Đang xử lý đăng ký...</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <img id="btn-top" src="../images/return_to_top.png" alt="Return to top" />
+
+    <footer>
+        <div class="footer-logo">
+            <div><em>Jundoku</em></div>
+            <div>皆様の本</div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-i18n="nav-about">About Us</h3>
+                <ul>
+                    <li data-i18n="footer-aboutus">Mang đến trải nghiệm đọc và mua sách tinh tế, chất lượng cho mọi độc giả</li>
+                    <li data-i18n="footer-aboutus-add">📍 123 Harmony Street, District 1, Ho Chi Minh City</li>
+                    <li>📞 (+84) 123 456 789</li>
+                    <li>📧 support@jundoku.com</li>
+                    <li>🕒 8:00 AM – 9:00 PM (Mon – Sun)</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer-categories">Shop by Category</h3>
+                <ul>
+                    <li><a href="../typologies/category.html?cat=business" data-i18n="footer-categories-sofa">Sofas & Armchairs</a></li>
+                    <li><a href="../404.html" data-i18n="footer-categories-dining">Dining Tables</a></li>
+                    <li><a href="../typologies/category.html?cat=fiction" data-i18n="footer-categories-bed">Beds</a></li>
+                    <li><a href="../404.html" data-i18n="footer-categories-cabinet">Cabinets & Shelves</a></li>
+                    <li><a href="../404.html" data-i18n="footer-categories-decor">Lighting & Decor</a></li>
+                    <li><a data-i18n="footer-categories-new">New Arrivals / Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="footer-policies">Policies & Support</h3>
+                <ul>
+                    <li><a href="../policies/policies.html" data-i18n="footer-policies-warranty">Warranty Policy</a></li>
+                    <li><a href="../policies/policies.html" data-i18n="footer-policies-return">Return & Exchange</a></li>
+                    <li><a href="../policies/policies.html" data-i18n="footer-policies-shipping">Shipping Policy</a></li>
+                    <li><a href="../policies/policies.html" data-i18n="footer-policies-order">How to Order</a></li>
+                    <li><a href="../policies/policies.html" data-i18n="footer-policies-privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 JUNDOKU – All rights reserved.</span>
+            <div class="social-icons">
+                <div class="social-icon">f</div>
+                <div class="social-icon">in</div>
+                <div class="social-icon">t</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/lang-change.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="../js/partials.js"></script>
+</body>
+</html>

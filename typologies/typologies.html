@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>Book Categories - Jundoku Books</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/typologies.css" />
+  </head>
+
+  <body data-page="typologies">
+    <!--Nhóm 9: Phần Header-->
+    <div data-include="../partials/header.html"></div>
+
+    <!--Nhóm 9: Nội dung chính trang Typologies-->
+    <main data-scroll="fade-up" class="typologies-page">
+      <section data-scroll="fade-up" class="page-title">
+        <h1 data-scroll="fade-up" data-i18n="typologies-title">BOOK CATEGORIES</h1>
+      </section>
+
+      <!--Nhóm 9: Lưới hiển thị các danh mục sách-->
+      <nav data-scroll="fade-up" class="typology-grid">
+        <!--Nhóm 9: Danh mục Tiểu thuyết-->
+        <a data-scroll="fade-up" href="category.html?cat=fiction" class="typology-item">
+          <span class="item-icon" aria-hidden="true">📖</span>
+          <span class="item-label" data-i18n="typology-bed">Fiction</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Phi hư cấu-->
+        <a data-scroll="fade-up" href="category.html?cat=non-fiction" class="typology-item">
+          <span class="item-icon" aria-hidden="true">🧠</span>
+          <span class="item-label" data-i18n="typology-armchair">Non-fiction</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Kinh doanh-->
+        <a data-scroll="fade-up" href="category.html?cat=business" class="typology-item">
+          <span class="item-icon" aria-hidden="true">💼</span>
+          <span class="item-label" data-i18n="typology-couch">Business</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Phát triển bản thân-->
+        <a data-scroll="fade-up" href="category.html?cat=self-help" class="typology-item">
+          <span class="item-icon" aria-hidden="true">🌱</span>
+          <span class="item-label" data-i18n="typology-wardrobe">Self-help</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Thiếu nhi-->
+        <a data-scroll="fade-up" href="category.html?cat=children" class="typology-item">
+          <span class="item-icon" aria-hidden="true">🧒</span>
+          <span class="item-label" data-i18n="typology-chair">Children</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Khoa học & Công nghệ-->
+        <a data-scroll="fade-up" href="category.html?cat=science" class="typology-item">
+          <span class="item-icon" aria-hidden="true">🔬</span>
+          <span class="item-label" data-i18n="typology-storage">Science & Tech</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Lịch sử-->
+        <a data-scroll="fade-up" href="category.html?cat=history" class="typology-item">
+          <span class="item-icon" aria-hidden="true">🏛️</span>
+          <span class="item-label" data-i18n="typology-dining">History</span>
+        </a>
+
+        <!--Nhóm 9: Danh mục Manga/Comics-->
+        <a data-scroll="fade-up" href="category.html?cat=manga" class="typology-item">
+          <span class="item-icon" aria-hidden="true">🎨</span>
+          <span class="item-label" data-i18n="typology-sidetable">Manga & Comics</span>
+        </a>
+      </nav>
+    </main>
+
+    <!--Nhóm 9: Phần quay lại đầu trang-->
+    <img
+      data-scroll="fade-up"
+      id="btn-top"
+      src="../images/return_to_top.png"
+      alt="Return to top"
+    />
+
+    <!--Nhóm 9: Phần footer-->
+    <div data-include="../partials/footer.html"></div>
+        
+
+    <script src="../js/lang-change.js"></script>
+    <!--Nhóm 9:  Liên kết file JS chuyển đổi ngôn ngữ -->
+    <script src="../js/common.js"></script>
+    <!--Nhóm 9:  Liên kết file JS chung -->
+    <script src="../js/partials.js"></script>
+  </body>
+</html>

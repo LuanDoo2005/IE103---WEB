@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Details - Jundoku</title>
+    <link rel="stylesheet" href="../css/order-detail.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+
+  <body data-page="order-detail">
+    <!--Nhóm 9: Phần Header-->
+    <div data-include="../partials/header.html"></div>
+
+    <!--Nhóm 9: Phần khung chính -->
+    <section data-scroll="fade-up" class="container">
+      <!--Nhóm 9: Tình trạng sản phẩm -->
+      <div data-scroll="fade-up" class="order-status-container">
+        <div class="status-header">
+          <div class="status-icon">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="60" cy="60" r="60" fill="#2F80ED" />
+              <path
+                d="M35 60L52 77L85 44"
+                stroke="white"
+                stroke-width="8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h1 data-i18n="order-completed">Order Completed</h1>
+          <p class="order-id">
+            <span data-i18n="order-id-label">Order ID:</span> JD2024110001
+          </p>
+        </div>
+
+        <!--Nhóm 9: Theo dõi đơn hàng -->
+        <div data-scroll="fade-up" class="timeline">
+          <div class="timeline-item completed">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="status-placed">Order placed</h3>
+              <p class="timestamp">08-11-2025 18:42</p>
+            </div>
+          </div>
+
+          <div class="timeline-item inactive">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="status-processing">Order is being processed</h3>
+            </div>
+          </div>
+
+          <div class="timeline-item inactive">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="status-packed">Order has been packed</h3>
+            </div>
+          </div>
+
+          <div class="timeline-item inactive">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="status-shipping">Order is on the way</h3>
+            </div>
+          </div>
+
+          <div class="timeline-item inactive">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 data-i18n="status-delivered">Order successfully delivered</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Nhóm 9: Xem sản phẩm -->
+      <div data-scroll="fade-up" class="products-section">
+        <h2 class="section-title" data-i18n="products-ordered">
+          Products Ordered
+        </h2>
+
+        <div class="product-list">
+          <p class="product-placeholder" data-i18n="loading-order-products">
+            Loading ordered books...
+          </p>
+        </div>
+
+        <!--Nhóm 9: Hoá đơn -->
+        <div data-scroll="fade-up" class="price-summary">
+          <div class="price-row">
+            <span data-i18n="subtotal-label">Subtotal</span>
+            <span id="order-subtotal">0 VND</span>
+          </div>
+          <div class="price-row">
+            <span data-i18n="taxes-label">Taxes</span>
+            <span id="order-taxes">0 VND</span>
+          </div>
+          <div class="price-row total">
+            <span data-i18n="total-label">Total</span>
+            <span id="order-total">0 VND</span>
+          </div>
+        </div>
+      </div>
+
+      <!--Nhóm 9: Địa chỉ giao hàng -->
+      <div data-scroll="fade-up" class="delivery-section">
+        <h2 class="section-title" data-i18n="delivery-address">
+          Delivery Address
+        </h2>
+        <div class="address-card">
+          <p class="address-name">Vân Nguyễn</p>
+          <p class="address-phone">09123456789</p>
+          <p class="address-detail">
+            Tân Đồng, Thành phố Đồng Xoài, Tỉnh Bình Phước
+          </p>
+        </div>
+      </div>
+
+      <!--Nhóm 9: Thông tin giao dịch và vận chuyển -->
+      <div data-scroll="fade-up" class="payment-shipping-section">
+        <h2 class="section-title" data-i18n="payment-shipping">
+          Payment & Shipping Method
+        </h2>
+
+        <div class="payment-shipping-grid">
+          <div class="info-card">
+            <p class="info-label" data-i18n="payment-method-label">
+              PAYMENT METHOD
+            </p>
+            <p class="info-value">
+              🏦
+              <span data-i18n="payment-method-bank"
+                >Bank Transfer (VietQR)</span
+              >
+            </p>
+          </div>
+          <div class="info-card">
+            <p class="info-label" data-i18n="shipping-method-label">
+              SHIPPING METHOD
+            </p>
+            <p class="info-value">
+              🚚
+              <span data-i18n="shipping-method-standard"
+                >Standard Delivery</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div data-scroll="fade-up" class="payment-shipping-grid">
+          <div class="info-card">
+            <p class="info-label" data-i18n="payment-status-label">
+              PAYMENT STATUS
+            </p>
+            <p class="info-value">
+              ✓ <span data-i18n="payment-status-paid">Paid</span>
+            </p>
+          </div>
+          <div class="info-card">
+            <p class="info-label" data-i18n="order-time-label">ORDER TIME</p>
+            <p class="info-value">08-11-2025 18:42</p>
+          </div>
+        </div>
+      </div>
+      <!--Nhóm 9: Call to action -->
+      <div data-scroll="fade-up" class="actions-section">
+        <button
+          id="contactSellerBtn"
+          class="btn btn-outline"
+          data-i18n="contact-seller-btn"
+        >
+          CONTACT SELLER
+        </button>
+        <button
+          id="buyAgainBtn"
+          class="btn btn-primary"
+          data-i18n="buy-again-btn"
+        >
+          BUY AGAIN
+        </button>
+      </div>
+    </section>
+
+    <!--Nhóm 9: Phần quay lại đầu trang-->
+    <img
+      data-scroll="fade-up"
+      id="btn-top"
+      src="../images/return_to_top.png"
+      alt="Return to top"
+    />
+
+    <!--Nhóm 9: Phần footer-->
+    <div data-include="../partials/footer.html"></div>
+
+    <script src="../js/lang-change.js"></script>
+    <!--Nhóm 9:  Liên kết file JS chuyển đổi ngôn ngữ -->
+    <script src="../js/common.js"></script>
+    <!--Nhóm 9:  Liên kết file JS chung -->
+    <script src="../js/order-detail.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/partials.js"></script>
+    
+  </body>
+</html>
+
+

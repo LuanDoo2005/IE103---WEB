@@ -1,0 +1,25 @@
+{
+  "en": {
+    "typologies-title": "BOOK CATEGORIES",
+    "typology-bed": "Fiction",
+    "typology-armchair": "Non-fiction",
+    "typology-couch": "Business",
+    "typology-wardrobe": "Self-help",
+    "typology-chair": "Children",
+    "typology-storage": "Science & Tech",
+    "typology-dining": "History",
+    "typology-sidetable": "Manga & Comics"
+  },
+
+  "vi": {
+    "typologies-title": "DANH MỤC SÁCH",
+    "typology-bed": "Tiểu thuyết",
+    "typology-armchair": "Phi hư cấu",
+    "typology-couch": "Kinh doanh",
+    "typology-wardrobe": "Phát triển bản thân",
+    "typology-chair": "Thiếu nhi",
+    "typology-storage": "Khoa học & Công nghệ",
+    "typology-dining": "Lịch sử",
+    "typology-sidetable": "Manga & Truyện tranh"
+  }
+}

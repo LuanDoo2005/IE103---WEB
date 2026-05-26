@@ -1,0 +1,349 @@
+﻿<!--Nhóm 9: Phần Header-->
+<header>
+  <div class="Logo">
+    <p>
+      <a href="#" id="logo-home-link"
+        ><em>Jundoku</em><br/>
+        皆様の本
+        </a>
+    </p>
+  </div>
+  <nav class="Main-Menu">
+    <!--Nhóm 9: Thanh điều hướng chính-->
+    <ul>
+      <li class="products-menu">
+        <a href="#" class="nav-link products-trigger" data-target="typologies/typologies.html" data-i18n="nav-products">Products</a>
+        <div class="dropdown-menu dropdown-mega">
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=fiction" data-i18n="typology-bed">Fiction</a>
+            <form class="dropdown-filter-form" data-category="fiction">
+              <input type="hidden" name="cat" value="fiction" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=non-fiction" data-i18n="typology-armchair">Non-fiction</a>
+            <form class="dropdown-filter-form" data-category="non-fiction">
+              <input type="hidden" name="cat" value="non-fiction" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=business" data-i18n="typology-couch">Business</a>
+            <form class="dropdown-filter-form" data-category="business">
+              <input type="hidden" name="cat" value="business" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=self-help" data-i18n="typology-wardrobe">Self-help</a>
+            <form class="dropdown-filter-form" data-category="self-help">
+              <input type="hidden" name="cat" value="self-help" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=children" data-i18n="typology-chair">Children</a>
+            <form class="dropdown-filter-form" data-category="children">
+              <input type="hidden" name="cat" value="children" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=science" data-i18n="typology-storage">Science & Tech</a>
+            <form class="dropdown-filter-form" data-category="science">
+              <input type="hidden" name="cat" value="science" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=history" data-i18n="typology-dining">History</a>
+            <form class="dropdown-filter-form" data-category="history">
+              <input type="hidden" name="cat" value="history" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+          <div class="dropdown-category">
+            <a href="#" class="nav-link dropdown-category-link" data-target="typologies/category.html?cat=manga" data-i18n="typology-sidetable">Manga & Comics</a>
+            <form class="dropdown-filter-form" data-category="manga">
+              <input type="hidden" name="cat" value="manga" />
+              <div class="dropdown-filter-grid">
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-format">Format</span>
+                  <label><input type="checkbox" name="format" value="paperback" /> <span data-i18n="format-paperback">Paperback</span></label>
+                  <label><input type="checkbox" name="format" value="hardcover" /> <span data-i18n="format-hardcover">Hardcover</span></label>
+                  <label><input type="checkbox" name="format" value="ebook" /> <span data-i18n="format-ebook">Ebook</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-language">Language</span>
+                  <label><input type="checkbox" name="language" value="vi" /> <span data-i18n="lang-vi">Vietnamese</span></label>
+                  <label><input type="checkbox" name="language" value="en" /> <span data-i18n="lang-en">English</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-price">Price</span>
+                  <label><input type="checkbox" name="price" value="low" /> <span data-i18n="price-low">Under 120.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="mid" /> <span data-i18n="price-mid">120.000 đ - 220.000 đ</span></label>
+                  <label><input type="checkbox" name="price" value="high" /> <span data-i18n="price-high">Over 220.000 đ</span></label>
+                </div>
+                <div class="dropdown-filter-group">
+                  <span class="dropdown-filter-title" data-i18n="filter-age">Age</span>
+                  <label><input type="checkbox" name="age" value="child" /> <span data-i18n="age-child">Children</span></label>
+                  <label><input type="checkbox" name="age" value="teen" /> <span data-i18n="age-teen">Teen</span></label>
+                  <label><input type="checkbox" name="age" value="adult" /> <span data-i18n="age-adult">Adult</span></label>
+                </div>
+              </div>
+              <button type="submit" class="dropdown-filter-submit" data-i18n="filter-apply">View products</button>
+            </form>
+          </div>
+        </div>
+      </li>
+      <li><a href="about-us/about-us.html" class="nav-link" data-target="about-us/about-us.html" data-i18n="nav-about">About us</a></li>
+      <li><a href="policies/policies.html" class="nav-link" data-target="policies/policies.html" data-i18n="nav-policies">Policies</a></li>
+    </ul>
+  </nav>
+
+  <nav class="Sub-Menu">
+    <!--Nhóm 9: Thanh điều hướng phụ-->
+    <ul>
+      <li>
+        <form id="search-box">
+          <!--Nhóm 9: Nút tìm kiếm-->
+          <input
+            type="text"
+            id="search-text"
+            placeholder="Search..."
+            data-i18n="search-placeholder"
+          />
+          <button id="search-btn">
+            <span class="fluent--search-12-filled"></span>
+          </button>
+        </form>
+      </li>
+      <li id="Wishlist">
+        <!--Nhóm 9: Giỏ yêu thích-->
+        <a href="#" class="nav-link" data-target="wishlist-and-payment/wishlist_index.html">
+          <span class="solar--heart-bold"></span>
+          <span class="wishlist-count">0</span>
+        </a>
+      </li>
+      <li id="User">
+        <!--Nhóm 9: Tài khoản người dùng-->
+        <!-- Hiển thị avatar nếu đã đăng nhập, icon mặc định nếu chưa -->
+        <a href="#" class="nav-link" data-target="user/personal-info.html" id="user-avatar-link">
+          <img
+            id="header-user-avatar"
+            class="header-avatar"
+            src=""
+            alt="User Avatar"
+            style="display: none"
+          />
+          <span id="header-default-icon" class="solar--user-bold"></span>
+        </a>
+      </li>
+      <li class="lang-switcher">
+        <!--Nhóm 9: Chuyển đổi ngôn ngữ-->
+        <div class="lang-toggle">
+          <input
+            type="radio"
+            id="lang-en"
+            name="site-lang"
+            checked
+            onchange="changeLanguage('en')"
+          />
+          <!--Nhóm 9: Sử dụng input type="radio" vì đây là tính năng tạo nút chọn hình tròn và chỉ có thể duy nhất chọn 1 ngôn ngữ-->
+          <input
+            type="radio"
+            id="lang-vi"
+            name="site-lang"
+            onchange="changeLanguage('vi')"
+          />
+          <div class="lang-track">
+            <!--Nhóm 9: Thanh trượt ngôn ngữ-->
+            <label for="lang-en" class="lang-opt lang-en">EN</label>
+            <label for="lang-vi" class="lang-opt lang-vi">VI</label>
+            <div class="lang-knob" aria-hidden="true"></div>
+            <!--Nhóm 9: Nút trượt ngôn ngữ-->
+          </div>
+        </div>
+      </li>
+      <li><span class="icomoon-free--leaf"></span></li>
+      <!--Nhóm 9: Biểu tượng mở thanh menu khi qua màn hình bé hơn-->
+    </ul>
+  </nav>
+</header>
+

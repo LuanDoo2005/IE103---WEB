@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist - Jundoku</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/wishlist.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+  <body data-page="wishlist">
+    <!--Nhóm 9: Phần Header-->
+    <div data-include="../partials/header.html"></div>
+    <!--Nhóm 9: Phần Wishlist -->
+    <section data-scroll="fade-up" id="wishlist-content">
+      <h1 data-scroll="fade-up" data-i18n="wishlist-title">Wishlist</h1>
+
+      <!--Nhóm 9: Wishlist Table -->
+      <div data-scroll="fade-up" class="wishlist-table">
+        <table data-scroll="fade-up" id="wishlist">
+          <thead>
+            <tr>
+              <th data-i18n="table-select">Select</th>
+              <th data-i18n="table-product-info">Book Information</th>
+              <th data-i18n="table-price">Price</th>
+              <th data-i18n="table-quantity">Quantity</th>
+              <th data-i18n="table-total">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamic content from JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <!--Nhóm 9: Order Estimate -->
+      <div data-scroll="fade-up" class="order-estimate">
+        <div class="order-title" data-i18n="order-estimate-title">
+          ORDER ESTIMATE
+        </div>
+        <div class="Total">
+          <span data-i18n="total-label">TOTAL</span>
+          <span id="wishlist-total">0 VND</span>
+        </div>
+      </div>
+
+      <!--Nhóm 9: Voucher section -->
+      <div data-scroll="fade-up" class="voucher-section">
+        <div class="voucher-header">
+          <div>
+            <h4>Voucher / Mã giảm giá</h4>
+            <p class="voucher-help">Chọn voucher bạn muốn áp dụng trước khi chuyển sang thông tin và thanh toán.</p>
+          </div>
+          <button type="button" id="voucher-toggle-btn" class="voucher-toggle-btn">
+            Chọn voucher <span class="voucher-arrow">▼</span>
+          </button>
+        </div>
+        <div class="voucher-input-row">
+          <input type="text" id="voucher-code" name="voucherCode" placeholder="Nhập mã voucher" />
+          <button type="button" class="apply-voucher-btn" id="applyVoucherBtn">Áp dụng</button>
+        </div>
+        <div id="voucher-error" class="voucher-error" aria-live="polite"></div>
+        <div id="voucher-list" class="voucher-list hidden"></div>
+        <div id="voucher-summary" class="voucher-summary"></div>
+      </div>
+
+      <!--Nhóm 9: Note -->
+      <div data-scroll="fade-up" class="note">
+        <div class="note-title" data-i18n="note-title">Note:</div>
+        <p data-i18n="note-content" data-i18n-html="true">
+          This price list does not include shipping fee and taxes. 
+          You can choose your preferred book format (Paperback, Hardcover, or Ebook). 
+          For more information on shipping and payment methods, please visit our 
+          <a href="../policies/policies.html">Policies</a> page.
+      </p>
+      
+      </div>
+
+      <!--Nhóm 9: Continue Button -->
+      <button
+        data-scroll="fade-up"
+        class="continue-bu"
+        data-i18n="continue-btn">Continue</button>
+    </section>
+
+    <!--Nhóm 9: Phần quay lại đầu trang-->
+    <img
+      data-scroll="fade-up"
+      id="btn-top"
+      src="../images/return_to_top.png"
+      alt="Return to top"
+    />
+
+    <!--Nhóm 9: Phần footer-->
+    <div data-include="../partials/footer.html"></div>
+
+    <!--Nhóm 9:  Liên kết file JS chuyển đổi ngôn ngữ -->
+    <script src="../js/lang-change.js"></script>
+    <!--Nhóm 9: Liên kết file js chung -->
+    <script src="../js/common.js"></script>
+    <!--Nhóm 9:  Liên kết file JS wishlist -->
+    <script src="../js/wishlist.js"></script>
+    <!--Nhóm 9: Liên kết file JS riêng cho partials-->
+    <script src="../js/partials.js"></script>
+  </body>
+</html>
+

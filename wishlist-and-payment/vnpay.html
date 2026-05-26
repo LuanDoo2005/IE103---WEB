@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VNPay Mock Checkout | Jundoku</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/bank.css" />
+    <style>
+      #payment {
+        padding-top: 80px;
+      }
+      .vnpay-card {
+        background: #ffffff;
+        border: 1px solid #d9e5f0;
+        padding: 24px;
+        border-radius: 20px;
+        box-shadow: 0 14px 40px rgba(15, 63, 118, 0.08);
+        margin-top: 26px;
+      }
+      .vnpay-card h2 {
+        margin-bottom: 12px;
+      }
+      .vnpay-field {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 14px;
+        font-size: 15px;
+        color: #1f3f70;
+      }
+      .vnpay-notice {
+        background: #eef4ff;
+        border: 1px solid #bfd5f0;
+        padding: 18px 20px;
+        border-radius: 16px;
+        margin-top: 20px;
+        color: #1f3f70;
+      }
+      .continue-bu {
+        margin-top: 30px;
+        width: 100%;
+      }
+      .continue-bu.vnpay-cancel {
+        background: #f5f6fb;
+        color: #1f3f70;
+        border-color: #cbd4e6;
+      }
+    </style>
+  </head>
+  <body data-page="vnpay">
+    <div data-include="../partials/header.html"></div>
+    <section data-scroll="blur" id="payment">
+      <h1 data-scroll="blur">VNPay Secure Checkout</h1>
+      <div data-scroll="blur" class="container">
+        <h2 data-scroll="blur">Mockup giao diện chuyển hướng VNPAY</h2>
+        <p class="subtitle" data-scroll="blur">
+          Đây là mockup giao diện thanh toán VNPAY. Khi nhấn Tiếp tục, bạn sẽ đến trang hoàn thành đơn hàng.
+        </p>
+
+        <div class="vnpay-card">
+          <div class="vnpay-field"><strong>Số tiền cần thanh toán</strong><span id="vnpay-amount">0 VND</span></div>
+          <div class="vnpay-field"><strong>Mã voucher</strong><span id="vnpay-voucher">Không có</span></div>
+          <div class="vnpay-field"><strong>Giảm giá</strong><span id="vnpay-discount">0 VND</span></div>
+          <div class="vnpay-field"><strong>Phương thức</strong><span>VNPAY</span></div>
+          <div class="vnpay-field"><strong>Order ID</strong><span id="vnpay-order-id">JD-MOCK-2026</span></div>
+        </div>
+
+        <div class="vnpay-notice">
+          Đây là giao diện giả lập VNPAY. Không có thanh toán thực tế trong bản demo này.
+        </div>
+
+        <button id="confirmVnpayBtn" class="continue-bu">Tiếp tục tới VNPAY</button>
+        <button id="cancelVnpayBtn" class="continue-bu vnpay-cancel">Quay lại trang thanh toán</button>
+      </div>
+    </section>
+
+    <img data-scroll="blur" id="btn-top" src="../images/return_to_top.png" alt="Return to top" />
+    <div data-include="../partials/footer.html"></div>
+
+    <script src="../js/lang-change.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/vnpay.js"></script>
+    <script src="../js/partials.js"></script>
+  </body>
+</html>

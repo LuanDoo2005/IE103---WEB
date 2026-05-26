@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Jundoku</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/about-us.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body data-page="about-us">
+    <!--Nhóm 9: Phần Header-->
+    <div data-include="../partials/header.html"></div>
+
+    <!--Nhóm 9: GIỚI THIỆU CHÍNH-->
+    <main data-scroll="fade-up" class="hero-section">
+      <div data-scroll="fade-up" class="container">
+        <div data-scroll="fade-up" class="hero-container">
+          <!--Nhóm 9: Cột văn bản bên trái-->
+          <div data-scroll="fade-up" class="hero-text-content">
+            <p data-scroll="fade-up" class="hero-subtitle">
+              <span data-i18n="hero-subtitle">Về Jundoku</span>
+              <span class="hero-subtitle-line"></span>
+            </p>
+            <h1 data-scroll="fade-up" class="hero-title" data-i18n="hero-title">
+              JUNDOKU — Nơi lưu giữ và sẻ chia những câu chuyện bằng sách
+            </h1>
+          </div>
+
+          <!--Nhóm 9: Hình ảnh bên phải-->
+          <div data-scroll="fade-up" class="hero-image-container">
+            <img
+              data-scroll="fade-up"
+              src="../images/about-us/hình2.jpg"
+              alt="Aesthetic Pattern"
+              class="hero-image"
+              loading="lazy"
+            />
+          </div>
+
+          <!--Nhóm 9: Hộp văn bản chồng lên-->
+          <div data-scroll="fade-up" class="hero-info-box">
+            <p
+              data-scroll="fade-up"
+              class="hero-info-box-italic"
+              data-i18n="hero-intro-1"
+            >
+              Jundoku được tạo ra từ tình yêu sách: tuyển chọn cẩn thận, tôn
+              trọng tác giả và mang đến trải nghiệm đọc trọn vẹn cho bạn.
+            </p>
+            <p
+              data-scroll="fade-up"
+              class="hero-info-box-text"
+              data-i18n="hero-intro-2"
+            >
+              Chúng tôi tuyển chọn những đầu sách giá trị — từ kinh điển đến
+              những tác phẩm độc lập — đồng thời tổ chức sự kiện, gặp gỡ
+              tác giả và chương trình thành viên nhằm kết nối cộng đồng đọc.
+            </p>
+            <a
+              data-scroll="fade-up"
+              href="../typologies/typologies.html"
+              class="hero-info-box-link"
+            >
+              <span data-i18n="hero-explore">Khám phá bộ sưu tập</span> →
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Nhóm 9: ACCORDION 3 MỤC-->
+    <section data-scroll="fade-up" class="section">
+      <div data-scroll="fade-up" class="container">
+        <div data-scroll="fade-up" class="philosophy-grid">
+          <!--Nhóm 9: Cột bên trái: Văn bản và Accordion-->
+          <div data-scroll="fade-up" class="philosophy-text-column">
+            <h2
+              data-scroll="fade-up"
+              class="section-title"
+              data-i18n="philosophy-title"
+            >
+              Triết lý hoạt động
+            </h2>
+            <p
+              data-scroll="fade-up"
+              class="section-subtitle"
+              data-i18n="philosophy-subtitle"
+            >
+              Jundoku hoạt động dựa trên ba trụ cột chính: tuyển chọn kỹ lưỡng,
+              tôn trọng bản quyền và xây dựng cộng đồng đọc — nhằm mang lại giá
+              trị bền vững cho độc giả và tác giả.
+            </p>
+
+            <!--Nhóm 9: Accordion container-->
+            <div data-scroll="fade-up" id="accordion-container">
+              <!--Nhóm 9: Mục 1-->
+              <div
+                data-scroll="fade-up"
+                class="accordion-item"
+                data-target="content-1"
+              >
+                <div
+                  data-scroll="fade-up"
+                  class="accordion-trigger"
+                  data-trigger="content-1"
+                >
+                  <img
+                    data-scroll="fade-up"
+                    src="../images/about-us/icon.png"
+                    alt="Curation Icon"
+                    class="accordion-icon"
+                    loading="lazy"
+                  />
+                  <h3
+                    data-scroll="fade-up"
+                    class="accordion-title"
+                    data-i18n="accordion-curation-title"
+                  >
+                    Tuyển chọn & Phối hợp
+                  </h3>
+                </div>
+                <!-- Nội dung 1 -->
+                <div
+                  data-scroll="fade-up"
+                  class="accordion-content"
+                  id="content-1"
+                >
+                  <p
+                    data-scroll="fade-up"
+                    class="accordion-text"
+                    data-i18n="accordion-curation-text"
+                  >
+                    Chúng tôi tuyển chọn kỹ lưỡng từ nhiều nguồn — kinh điển,
+                    sách độc lập và những ấn phẩm hiếm — để mang đến thư viện
+                    đa dạng, giàu cảm hứng cho độc giả.
+                  </p>
+                </div>
+              </div>
+
+              <!--Nhóm 9: Mục 2-->
+              <div
+                data-scroll="fade-up"
+                class="accordion-item"
+                data-target="content-2"
+              >
+                <div
+                  data-scroll="fade-up"
+                  class="accordion-trigger"
+                  data-trigger="content-2"
+                >
+                  <img
+                    data-scroll="fade-up"
+                    src="../images/about-us/icon.png"
+                    alt="Authentic Icon"
+                    class="accordion-icon"
+                    loading="lazy"
+                  />
+                  <h3
+                    data-scroll="fade-up"
+                    class="accordion-title"
+                    data-i18n="accordion-authentic-title"
+                  >
+                    Bản in & Bảo vệ bản quyền
+                  </h3>
+                </div>
+                <!-- Nội dung 2 -->
+                <div
+                  data-scroll="fade-up"
+                  class="accordion-content"
+                  id="content-2"
+                >
+                  <p
+                    data-scroll="fade-up"
+                    class="accordion-text"
+                    data-i18n="accordion-authentic-text"
+                  >
+                    Jundoku hợp tác chặt chẽ với nhà xuất bản và tác giả để
+                    đảm bảo ấn phẩm chính thức, chất lượng và tôn trọng bản
+                    quyền.
+                  </p>
+                </div>
+              </div>
+
+              <!--Nhóm 9: Mục 3-->
+              <div
+                data-scroll="fade-up"
+                class="accordion-item"
+                data-target="content-3"
+              >
+                <div
+                  data-scroll="fade-up"
+                  class="accordion-trigger"
+                  data-trigger="content-3"
+                >
+                  <img
+                    data-scroll="fade-up"
+                    src="../images/about-us/icon.png"
+                    alt="Community Icon"
+                    class="accordion-icon"
+                    loading="lazy"
+                  />
+                  <h3
+                    data-scroll="fade-up"
+                    class="accordion-title"
+                    data-i18n="accordion-community-title"
+                  >
+                    Cộng đồng & Sự kiện
+                  </h3>
+                </div>
+                <!-- Nội dung 3 -->
+                <div
+                  data-scroll="fade-up"
+                  class="accordion-content"
+                  id="content-3"
+                >
+                  <p
+                    data-scroll="fade-up"
+                    class="accordion-text"
+                    data-i18n="accordion-community-text"
+                  >
+                    Chúng tôi tổ chức buổi trò chuyện, ký tặng và câu lạc bộ đọc
+                    sách để kết nối bạn đọc và tác giả, xây dựng văn hóa đọc bền
+                    vững.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Nhóm 9: Cột bên phải: Hình ảnh-->
+          <div data-scroll="fade-up" class="philosophy-image-column">
+            <img
+              data-scroll="fade-up"
+              src="../images/about-us/hình1.jpg"
+              alt="A collection of artistic green wall tiles"
+              class="philosophy-image"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section - Tailwind -->
+    <section data-scroll="fade-up" class="py-16 md:py-20" style="font-family: 'Be Vietnam Pro', sans-serif;">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto mb-10 max-w-3xl text-center">
+          <h2 class="text-3xl font-extrabold tracking-tight text-[#123B7A] md:text-4xl">
+            Đội ngũ của chúng tôi
+          </h2>
+          <p class="mt-4 text-base font-normal leading-relaxed text-slate-600 md:text-lg">
+            Chúng tôi cùng xây dựng Jundoku trở thành không gian kết nối người đọc, lan tỏa văn hóa đọc và tạo nên những trải nghiệm mua sách tử tế, đáng tin cậy.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <article class="h-[250px] rounded-[28px] bg-gradient-to-b from-white/70 to-white/35 p-5 text-center shadow-lg ring-1 ring-white/60 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl md:h-[270px]">
+            <img src="../images/about-us/AG.jpg" alt="Đỗ Bá Luân" class="mx-auto h-20 w-20 rounded-full border border-white/70 object-cover" loading="lazy" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Đỗ Bá Luân</h3>
+            <p class="mt-1 text-sm font-semibold text-[#2F80ED]">Điều phối Nội dung</p>
+            <p class="mt-2 text-sm italic leading-relaxed text-slate-600">"Sách tốt mở ra góc nhìn mới."</p>
+          </article>
+
+          <article class="h-[250px] rounded-[28px] bg-gradient-to-b from-white/70 to-white/35 p-5 text-center shadow-lg ring-1 ring-white/60 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl md:h-[270px]">
+            <img src="../images/about-us/trump-hello-kitty-mugshot.jpg" alt="Trịnh Viết Xuân Quang" class="mx-auto h-20 w-20 rounded-full border border-white/70 object-cover" loading="lazy" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Trịnh Viết Xuân Quang</h3>
+            <p class="mt-1 text-sm font-semibold text-[#2F80ED]">Vận hành Sản phẩm</p>
+            <p class="mt-2 text-sm italic leading-relaxed text-slate-600">"Trải nghiệm mượt đến từ chi tiết."</p>
+          </article>
+
+          <article class="relative z-20 h-[250px] rounded-[28px] bg-gradient-to-b from-white/80 to-white/40 p-5 text-center shadow-2xl ring-2 ring-[#2F80ED]/55 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl md:h-[270px] md:-translate-y-4 xl:-translate-y-8">
+            <img src="../images/about-us/TS.jpg" alt="Nguyễn Hoàng Vy" class="mx-auto h-20 w-20 rounded-full border border-[#2F80ED]/50 object-cover" loading="lazy" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Nguyễn Hoàng Vy</h3>
+            <p class="mt-1 text-sm font-semibold text-[#2F80ED]">Trưởng nhóm Dự án</p>
+            <p class="mt-2 text-sm italic leading-relaxed text-slate-600">"Đúng cuốn sách, đúng thời điểm."</p>
+          </article>
+
+          <article class="h-[250px] rounded-[28px] bg-gradient-to-b from-white/70 to-white/35 p-5 text-center shadow-lg ring-1 ring-white/60 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl md:h-[270px]">
+            <img src="../images/about-us/SC.jpg" alt="Huỳnh Đặng Nhật Bảo" class="mx-auto h-20 w-20 rounded-full border border-white/70 object-cover" loading="lazy" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Huỳnh Đặng Nhật Bảo</h3>
+            <p class="mt-1 text-sm font-semibold text-[#2F80ED]">Phát triển Giao diện</p>
+            <p class="mt-2 text-sm italic leading-relaxed text-slate-600">"Thiết kế đẹp phải thật tự nhiên."</p>
+          </article>
+
+          <article class="h-[250px] rounded-[28px] bg-gradient-to-b from-white/70 to-white/35 p-5 text-center shadow-lg ring-1 ring-white/60 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:shadow-2xl md:h-[270px]">
+            <img src="../images/about-us/VH.jpg" alt="Hồ Bạch Bắc" class="mx-auto h-20 w-20 rounded-full border border-white/70 object-cover" loading="lazy" />
+            <h3 class="mt-4 text-lg font-bold text-slate-900">Hồ Bạch Bắc</h3>
+            <p class="mt-1 text-sm font-semibold text-[#2F80ED]">Quản trị Dữ liệu</p>
+            <p class="mt-2 text-sm italic leading-relaxed text-slate-600">"Dữ liệu rõ ràng, quyết định chính xác."</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--Nhóm 9: Phần quay lại đầu trang-->
+    <img
+      data-scroll="fade-up"
+      id="btn-top"
+      src="../images/return_to_top.png"
+      alt="Return to top"
+    />
+
+    <!--Nhóm 9: Phần footer-->
+    <div data-include="../partials/footer.html"></div>
+
+    <script src="../js/lang-change.js"></script>
+    <!--Nhóm 9:  Liên kết file JS chuyển đổi ngôn ngữ -->
+    <script src="../js/common.js"></script>
+    <!--Nhóm 9:  Liên kết file JS chung -->
+    <script src="../js/about-us.js"></script>
+    <!--Nhóm 9: Liên kết file JS riêng cho about-us-->
+    <script src="../js/partials.js"></script>
+    
+  </body>
+</html>
